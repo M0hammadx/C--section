@@ -1,4 +1,3 @@
-
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,14 +27,16 @@ namespace ConsoleApplication3
                 int c = (n / 100) % 10;
 
 
-         if (n > 100)
+         if (n > 99)
             {
 
                 Console.WriteLine(s[c] + " hundred");
-                if (a != 0)
+                if (n % 100 != 0)
 
                     Console.WriteLine("and ");
+                else return;
 
+                
                 n %= 100;
             }
                
